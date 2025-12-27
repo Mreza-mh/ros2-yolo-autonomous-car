@@ -51,7 +51,7 @@ venv*/
 # ML artifacts & datasets
 # ----------------
 # Large model weights and checkpoints (uncomment if you want to track some)
-*.pt
+# *.pt
 *.pth
 *.onnx
 *.weights
