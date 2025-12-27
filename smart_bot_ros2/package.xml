@@ -1,0 +1,14 @@
+<package format="3">
+  <name>smart_bot_ros2</name>
+  <version>1.0.0</version>
+  <description>SmartBot ROS2</description>
+  <maintainer email="reza@example.com">reza</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

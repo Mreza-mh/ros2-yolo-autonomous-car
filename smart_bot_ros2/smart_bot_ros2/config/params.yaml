@@ -1,0 +1,49 @@
+# SmartBot ROS2 Parameters
+
+android_camera:
+  ros__parameters:
+    camera_url: "http://10.89.52.85:4747/video" # ✅ DroidCam!
+    source_fps: 20.0
+    frame_id: "camera_link"
+    width: 640
+    height: 640
+    reconnect_interval: 5.0
+
+image_proc:
+  ros__parameters:
+    input_topic: "/camera/image_raw"
+    output_topic: "/image_rect_color"
+    target_width: 640
+    target_height: 640
+    keep_aspect_ratio: true
+
+yolo_detector:
+  ros__parameters:
+    model: "/home/reza/smart_bot_ros2/src/smart_bot_ros2/smart_bot_ros2/runs/train/best/best.pt"
+    conf_threshold: 0.5
+    iou_threshold: 0.45
+    input_topic: "/image_rect_color"
+
+ultrasonic_front:
+  ros__parameters:
+    mode: "sim" # sim | serial | udp
+    sim_distance: 1.8
+
+obstacle_avoidance:
+  ros__parameters:
+    min_distance: 0.60
+    critical_distance: 0.35
+    backoff_speed: -0.22
+    turn_speed: 0.9
+    avoid_duration: 1.5
+    cmd_timeout: 0.5
+
+cmd_vel_mux:
+  ros__parameters:
+    min_confidence: 0.5
+
+esp32_bridge:
+  ros__parameters:
+    esp32_ip: "10.89.52.115" # ESP32 WiFi AP IP address
+    udp_ip: "10.89.52.115"
+    esp32_port: 8889 # UDP port
