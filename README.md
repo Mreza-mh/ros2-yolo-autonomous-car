@@ -108,7 +108,9 @@ DroidCam -> /camera/image_raw
 ### ویدیوی دمو (عملکرد خودرو)
 این ویدیو برای نمایش عملکرد خودرو در اجرای واقعی پروژه است:
 
-[مشاهده ویدیو](assets/videos/car_run.mp4)
+[![مشاهده ویدیو](assets/images/car.jpg)](assets/videos/car_run.mp4)
+
+> نکته: GitHub معمولاً فایل‌های `mp4` را داخل خودِ README به‌صورت پلیر نمایش نمی‌دهد؛ اما با کلیک روی تصویر، ویدیو باز می‌شود.
 
 ### مسیرهای مهم در پروژه
 - تنظیمات: `smart_bot_ros2/smart_bot_ros2/config/params.yaml`

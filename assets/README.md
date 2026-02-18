@@ -21,11 +21,6 @@
   - پنجره‌ی `yolo_visualizer`
   - یا نمایش تاپیک `/yolo/image_with_detections` در ابزارهای تصویر داخل ROS2 (مثل `rqt`-based viewers)
 
-## لینک دادن داخل README
-- عکس:
-  - `![car](assets/images/car.jpg)`
-- ویدیو (GitHub معمولاً embed نمی‌کند، اما لینک مستقیم کافی است):
-  - `[Car run video](assets/videos/car_run.mp4)`
+## نکته درباره ویدیو در README
+GitHub معمولاً فایل‌های `mp4` را داخل خودِ README به‌صورت پلیر نمایش نمی‌دهد. برای همین در `README.md` یک تصویر (thumbnail) گذاشته شده که با کلیک روی آن، فایل ویدیو باز می‌شود.
 
-## نکته
-اگر ویدیوها حجیم شدند، بهتر است از Git LFS استفاده شود.

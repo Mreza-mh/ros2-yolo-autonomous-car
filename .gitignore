@@ -8,7 +8,7 @@
 build/
 install/
 dataset/
-images/
+/images/
 log/
 build_*/
 install_*/
